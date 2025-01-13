@@ -11,8 +11,10 @@
   "dependencies": {
     "@types/node": "^22.10.5",
     "front-matter": "^4.0.2",
+    "marked": "^15.0.6",
     "react": "19.0.0",
     "react-dom": "19.0.0",
+    "react-marked-renderer": "^2.0.1",
     "react-server-dom-webpack": "19.0.0",
     "waku": "0.21.12"
   },
