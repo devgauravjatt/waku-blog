@@ -1,5 +1,5 @@
 import { marked } from 'marked'
-import { getPostBySlug } from '../../lib/server'
+import { getAllPosts, getPostBySlug } from '../../lib/server'
 
 export default async function PostPage({ blog: blog }: { blog: string }) {
 	const data = await getData(blog)
@@ -24,7 +24,9 @@ const getData = async (blog: string) => {
 }
 
 export const getConfig = async () => {
+	const posts = getAllPosts()
 	return {
-		render: 'dynamic',
+		render: 'static',
+		staticPaths: [...posts.map((post) => post.slug)],
 	}
 }
