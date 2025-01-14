@@ -1,13 +1,12 @@
-import { getAllPosts } from '../lib/server'
-import PostsList from '../components/postsList'
+import { getAllPosts } from '../../lib/server'
+import SearchBox from '../../components/searchBox'
 
 export default async function HomePage() {
 	const data = await getData()
 
 	return (
-		<div>
-			<h2 className='font-semibold text-2xl pb-4'>Blogs Posts - </h2>
-			<PostsList posts={data.posts} />
+		<div className='w-full mx-auto'>
+			<SearchBox posts={data.posts} />
 		</div>
 	)
 }

@@ -27,3 +27,14 @@ export const getAllPosts = () => {
 
 	return appPotsMeta
 }
+
+export const getPostBySlug = (slug: string) => {
+	const postFolderPath = './src/posts'
+	const fileName = `${slug}.md`
+	const post = fs.readFileSync(`${postFolderPath}/${fileName}`, 'utf8')
+	const { attributes, body } = fm(post)
+	return {
+		...(attributes as Post),
+		body,
+	}
+}

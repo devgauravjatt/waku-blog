@@ -8,13 +8,15 @@ export const Header = () => {
 					<Link to='/'>Waku Blog</Link>
 				</h2>
 				<div>
-					<input
-						type='search'
-						name='search'
-						id='search'
-						className='px-2 py-1'
-						placeholder='search hare...'
-					/>
+					<Link to='/search'>
+						<input
+							type='search'
+							name='search'
+							id='search'
+							className='px-2 py-1'
+							placeholder='search hare...'
+						/>
+					</Link>
 				</div>
 				<div>
 					<ul className='flex gap-5'>
