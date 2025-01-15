@@ -1,49 +1,41 @@
-# Project Title
+# 🌐 Waku Blog
 
-Brief description of your project, what it does, and its purpose.
+Waku Blog is a modern and flexible blogging platform built using **TypeScript**, **CSS**, and **JavaScript**. It leverages the **Waku framework** for static paths and prerendering, integrates **Fuse.js** for search functionality, and uses **Tailwind CSS** for stylish, responsive design.
 
-## Table of Contents
+---
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+## ✨ Features
 
-## Installation
+- **🛤️ Static Path Generation**: Automatically generate static paths for your blog posts.
+- **⚡ Prerendering**: Pre-render your blog content for better performance and SEO.
+- **🔎 Search Functionality**: Quickly find content with **Fuse.js** integrated search capabilities.
+- **🎨 Modern Design**: Sleek and responsive design powered by **Tailwind CSS**.
+- **⚙️ Customizable**: Easily customize the blog's look and feel using **CSS** and **JavaScript**.
 
-Instructions on how to install and set up the project. Include any prerequisites and commands to run.
+---
 
-```bash
-# Example commands
-git clone https://github.com/yourusername/yourproject.git
-cd yourproject
-npm install
-```
+---
 
-## Usage
+## 🔍 What is Waku?
 
-Instructions on how to use the project. Provide examples and code snippets if possible.
+**Waku** is a minimal React framework designed to simplify the development process and boost the performance of web applications. It effortlessly handles routing, component linking, static path generation, and prerendering.
 
-```bash
-# Example usage
-npm start
-```
+For more information, visit the official [Waku website](https://waku.gg/).
 
-## Features
+## 🤝 Contributing
 
-- List the main features of the project
-- Highlight what makes your project stand out
+We welcome all contributions to improve **Waku Blog**! Here’s how you can contribute:
 
-## Contributing
+1. **🔧 Fork the repository.**
+2. **🌱 Create a new branch** (`git checkout -b feature-branch`).
+3. **✍️ Make your changes and commit them** (`git commit -m 'Add new feature'`).
+4. **🚀 Push to the branch** (`git push origin feature-branch`).
+5. **🔁 Open a pull request.**
 
-Guidelines on how to contribute to the project. Include instructions for submitting pull requests or reporting issues.
+For detailed guidelines, please check out our contributing guidelines.
 
-## License
+---
 
-Include the license under which the project is distributed.
+## 📜 License
 
-## Contact
-
-Provide contact information or links where users can reach out for questions or feedback.
+This project is licensed under the **MIT License**. See the LICENSE file for more details.
