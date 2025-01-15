@@ -2,6 +2,7 @@
 
 import Fuse from 'fuse.js'
 import { useState } from 'react'
+import { CiSearch } from 'react-icons/ci'
 import { Link } from 'waku'
 
 interface Post {
@@ -30,14 +31,17 @@ export default function SearchBox(props: { posts: Post[] }) {
 		<>
 			<div className='flex flex-col justify-center items-center'>
 				<h2 className='font-semibold text-2xl pb-10'>Search - Blog Posts</h2>
-				<input
-					type='text'
-					name='search'
-					id='search'
-					onInput={handleSearch}
-					className='px-2 bg-slate-300 py-1 w-96 text-lg'
-					placeholder='search hare...'
-				/>
+				<div className='flex bg-slate-200 px-2 items-center rounded-sm gap-2'>
+					<CiSearch size={25} />
+					<input
+						type='text'
+						name='search'
+						id='search'
+						onInput={handleSearch}
+						className='px-2 bg-slate-200 py-1 w-96 text-lg'
+						placeholder='search hare...'
+					/>
+				</div>
 			</div>
 			<h3>{posts.length} results</h3>
 			<div className='pt-6'>

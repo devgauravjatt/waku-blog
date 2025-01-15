@@ -7,12 +7,18 @@ export default async function PostPage({ blog: blog }: { blog: string }) {
 	const html = marked.parse(data.post.body)
 
 	return (
-		<div>
-			<h1 className='text-3xl font-bold'>{data.post.title}</h1>
-			<div id='post'>
-				<div dangerouslySetInnerHTML={{ __html: html }} />
+		<>
+			<title>{data.post.title}</title>
+			<meta name='description' content={data.post.description} />
+			<meta name='keywords' content={data.post.tags.join(', ')} />
+			<div>
+				<h1 className='text-3xl font-bold pb-5'>{data.post.title}</h1>
+				<hr />
+				<div id='post' className='pt-2'>
+					<div dangerouslySetInnerHTML={{ __html: html }} />
+				</div>
 			</div>
-		</div>
+		</>
 	)
 }
 

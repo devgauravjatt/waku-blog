@@ -5,9 +5,13 @@ export default async function HomePage() {
 	const data = await getData()
 
 	return (
-		<div className='w-full mx-auto'>
-			<SearchBox posts={data.posts} />
-		</div>
+		<>
+			<title>Search Page - Waku Blog</title>
+			<meta name='description' content='Search Page - Waku Blog' />
+			<div className='w-full mx-auto'>
+				<SearchBox posts={data.posts} />
+			</div>
+		</>
 	)
 }
 

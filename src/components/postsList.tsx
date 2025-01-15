@@ -1,3 +1,4 @@
+import { MdOutlineSubtitles } from 'react-icons/md'
 import { Link } from 'waku'
 
 interface Post {
@@ -14,8 +15,10 @@ export default function PostsList(props: { posts: Post[] }) {
 			{props.posts.map((post) => (
 				<div className='flex flex-col gap-3 border-2 p-2' key={post.slug}>
 					<Link to={`/posts/${post.slug}`}>
-						{' '}
-						<h2 className='text-2xl font-semibold'>{post.title}</h2>{' '}
+						<div className='flex items-center gap-2'>
+							<MdOutlineSubtitles size={25} />
+							<h2 className='text-2xl font-semibold'>{post.title}</h2>
+						</div>
 					</Link>
 					<p className='text-sm'>{post.description}</p>
 					<div>
